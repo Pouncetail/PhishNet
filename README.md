@@ -6,7 +6,7 @@ Everyday, millions fall victim to phishing attempts, scams, and identity theft. 
 2. Go to Chrome, in the URL box type `chrome://extensions`
 3. On the top right, enable developer options
 4. Click on Load unpacked
-5. Select downloaded PhishNet folder (Do not select the zip file)
+5. Select downloaded PhishNet-main folder (Do not select the zip file)
 6. It should populate in the list and be added as an extension, will also be turned on by default
 
 ## Inspiration
