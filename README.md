@@ -8,6 +8,7 @@ Everyday, millions fall victim to phishing attempts, scams, and identity theft. 
 4. Click on Load unpacked
 5. Select downloaded PhishNet-main folder (Do not select the zip file)
 6. It should populate in the list and be added as an extension, will also be turned on by default
+7. You can turn the program off and on, and adding to the list will ensure that these websites will not be blocked by PhishNet
 
 ## Inspiration
 Many of the people who fall victim to tech support scams, phishing attempts, malware attacks, and identity theft are people who might not be familiar with internet safety. These people might click on shady links, be targeted by scam advertisements, or download malware claiming to be legitimate software. Because of this, billions of dollars of victims' money is stolen every single year.
@@ -23,10 +24,12 @@ PhishNet AI serves to "catch" these phishing attempts in its metaphorical "net" 
 
 As the user browses the web, PhishNet AI is always vigilant about what websites the user clicks on or gets redirected to. Everyday websites like Google or Facebook won't trip any red flags, but if a user stumbles across a malicious website seeking to steal their information, PhishNet AI will quickly block the user from accessing the website, and provide the user with useful information (powered by Gemini AI) about why the website was blocked, and what threats were prevented.
 
+Additionally, a well-known tactic used by scammers is to have the user download remote control software, allowing the scammer to take control of their computer. However, these kinds of software are not inherently malicious, and so instead of blocking the website, we instead alert the user about what the website is, and allow them to proceed forward if they understand.
+
 ## How we built PhishNet AI
 PhishNet AI is a Google Chrome web extension that sits on top of the browser at all times. The extension constantly monitors the web URL that the user is currently on, calls upon multiple URL checking bots to gauge the threat level of the current website, and generates a report on what the URL checkers found.
 
-If the URL checkers report that a threat has been found, PhishNet AI will redirect the user to a safe page, and notify them that the malicious website has been blocked. Gemini AI generates a short summary of what kind of threat the website posed, and what kind of threat PhishNet AI prevented. All of this is shown to the user in a simple and concise manner, so that they can quickly get back to what they were doing.
+If the URL checkers report that a threat has been found, PhishNet AI will redirect the user to a safe page, and notify them that the malicious website has been blocked. Gemini AI generates a short summary of what kind of threat the website posed, and what kind of threat PhishNet AI prevented. All of this is shown to the user in a simple and concise manner, so that they can quickly get back to what they were doing. In addition to this, our program checks the URL with a database of known remote control websites, and if it is a known remote control website, then it alerts the user of the risks and ensures they know what they're doing.
 
 ## Challenges we ran into while developing PhishNet AI
 There were many different methods we considered when it came to gauging a website's legitimacy (whether a website was a phishing scam, contained malware, or was completely benign).
