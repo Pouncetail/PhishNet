@@ -1,5 +1,14 @@
 # PhishNet
 Everyday, millions fall victim to phishing attempts, scams, and identity theft. PhishNet AI catches these malicious websites and explains why it was dangerous using AI and anti-virus programs.
+
+## How To Use
+1. Download the zip file, and unzip the file on your desktop
+2. Go to Chrome, in the URL box type `chrome://extensions`
+3. On the top right, enable developer options
+4. Click on Load unpacked
+5. Select downloaded PhishNet folder (Do not select the zip file)
+6. It should populate in the list and be added as an extension, will also be turned on by default
+
 ## Inspiration
 Many of the people who fall victim to tech support scams, phishing attempts, malware attacks, and identity theft are people who might not be familiar with internet safety. These people might click on shady links, be targeted by scam advertisements, or download malware claiming to be legitimate software. Because of this, billions of dollars of victims' money is stolen every single year.
 
